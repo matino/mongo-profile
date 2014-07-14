@@ -100,7 +100,7 @@ def parse_record(record_source):
         (_re_remove_record, RemoveRecord),
         (_re_getmore_record, GetMoreRecord),
     ]
-    info = record_source['info']
+    info = record_source['op']
     # find record by info
     record = None
     for regex, RecordClass in record_map:
